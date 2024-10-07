@@ -18,7 +18,7 @@ class SeriesController extends Controller
             'Greys\'s Anatomy'
         ];
 
-        return view('listar-series')->with('series', $series);
+        return view('series.index')->with('series', $series);
     }
 
     /**
