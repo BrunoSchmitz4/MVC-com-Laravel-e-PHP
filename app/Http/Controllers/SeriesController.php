@@ -18,13 +18,7 @@ class SeriesController extends Controller
             'Greys\'s Anatomy'
         ];
 
-        $html = '<ul>';
-        foreach ($series as $serie) {
-            $html .= "<li>$serie</li>";
-        }
-        $html .= '</ul>';
-
-        return $html;
+        return view('listar-series')->with('series', $series);
     }
 
     /**
